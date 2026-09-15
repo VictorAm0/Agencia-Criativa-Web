@@ -196,6 +196,10 @@ section{
     padding: 15px 20px;
     font-size: 1rem;
   }
+  header nav{
+    display: flex;
+    flex-flow: column;
+  }
 
   #container{
     display: grid;
