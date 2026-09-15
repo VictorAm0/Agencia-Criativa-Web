@@ -188,10 +188,15 @@ section{
     font-size: 1rem;
   }
 
-  #servicos{
+  #container{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
     gap: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #servicos .card{
     width: 100%;
   }
 }
