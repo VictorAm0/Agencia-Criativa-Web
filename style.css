@@ -171,3 +171,14 @@ section{
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px){
+    body, html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    img{
+    max-width: 100%;
+    height: auto;
+  }
+}
