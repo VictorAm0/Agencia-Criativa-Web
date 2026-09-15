@@ -44,7 +44,7 @@ header nav a{
     font-size: 1.25em;
 }
 header nav a:hover{
-    color: oklch(37.1% 0 none);
+    color: oklch(55.6% 0 none);
 }
 
 main{
@@ -70,7 +70,7 @@ section{
 
 #home button{
     width: 15%;
-    padding: 0.6em;
+    padding: 0.7em;
     border: none;
     border-radius: 0.8em;
     align-self: center;
@@ -149,7 +149,7 @@ section{
 }
 
 #contato form input{
-   width: 90%;
+   width: 85%;
    height: 2.2em;
    padding: 1em;
    border-radius: 0.3em;
@@ -163,7 +163,7 @@ section{
 
 #contato form button{
     width: 20%;
-    padding: 0.7em;
+    padding: 0.8em;
     border: none;
     border-radius: 0.6em;
     background-color: oklch(60.9% 0.126 221.723);
