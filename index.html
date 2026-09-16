@@ -7,64 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="agencia_criativa_web_logo.svg" alt="" srcset="">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#contato">Contato</a>
+    <header class="header">
+        <img src="img/agencia_criativa_web_logo.svg" alt="" srcset="" class="header__logo">
+        <nav class="header__nav">
+            <a href="#home" class="nav__item">Home</a>
+            <a href="#sobre" class="nav__item">Sobre Nós</a>
+            <a href="#servicos" class="nav__item">Serviços</a>
+            <a href="#depoimentos" class="nav__item">Depoimentos</a>
+            <a href="#contato" class="nav__item">Contato</a>
         </nav>
-    </header>
+    </header> 
     <main>
-        <section id="home">
+        <section class="section section--home">
             <h2>Transformamos ideias em experiências digitais memoráveis</h2>
             <h3>Somos a Agência Criativa Web: unimos design, tecnologia e estratégia para criar marcas e sites que conectam pessoas e resultados.</h3>
-            <button>Solicite um orçamento</button>
+            <button class="home__button">Solicite um orçamento</button>
         </section>
 
 
-        <section id="sobre">
-            <img src="fcbda437-b11e-4bcb-879e-ba306cf7ba81 copy.png" alt=""
-            srcset="chat.png 800w">
+        <section  class="section section--sobre">
+            <img src="img/fcbda437-b11e-4bcb-879e-ba306cf7ba81 copy.png" alt=""
+            srcset="img/chat.png 800w">
             <h2>Sobre Nós</h2>
             <p>Somos uma agência apaixonada por criar soluções digitais que unem estética e performance. Combinamos criatividade, tecnologia e estratégia para transformar a presença online de marcas de todos os tamanhos.</p>
             <h3>Nossos valores</h3>
-            <ul>
-                <li><strong>Criatividade com propósito</strong> — cada projeto nasce de uma ideia que resolve um problema real.</li>
-                <li><strong>Transparência</strong> — comunicação clara em todas as etapas do processo.</li>
-                <li><strong>Compromisso com resultados</strong> — entregamos não só design bonito, mas impacto de negócio.</li>
-                <li><strong>Inovação constante</strong> — estamos sempre atualizados com as melhores práticas de mercado.</li>
-
+            <ul class=" sobre__list">
+                <li class="item--sobre"><strong>Criatividade com propósito</strong> — cada projeto nasce de uma ideia que resolve um problema real.</li>
+                <li class="item--sobre"><strong>Transparência</strong> — comunicação clara em todas as etapas do processo.</li>
+                <li class="item--sobre"><strong>Compromisso com resultados</strong> — entregamos não só design bonito, mas impacto de negócio.</li>
+                <li class="item--sobre"><strong>Inovação constante</strong> — estamos sempre atualizados com as melhores práticas de mercado.</li>
             </ul>
         </section>
 
 
-        <section id="servicos">
+        <section class="section">
             <h2>Serviços</h2>
-            <div id="container">
-                <div class="card">
+            <div class="container">
+                <div class="container__card">
                 <h4>Design Gráfico</h4>
                 <p>identidade visual, materiais impressos e digitais que comunicam a essência da sua marca.</p>
               </div>
-              <div class="card">
+              <div class="container__card">
                 <h4>Desenvolvimento Web</h4>
                 <p>sites e aplicações rápidos, responsivos e otimizados para conversão.</p>
               </div>
-              <div class="card">
+              <div class="container__card">
                 <h4>Branding</h4>
                 <p>construção de marcas sólidas, do posicionamento estratégico à linguagem visual.</p>
               </div>
-              <div class="card">
+              <div class="container__card">
                 <h4>UX/UI Design</h4>
                 <p>interfaces intuitivas pensadas na experiência do usuário.</p>
               </div>
-              <div class="card">
+              <div class="container__card">
                 <h4>Marketing Digital</h4>
                 <p>estratégias de conteúdo e performance para atrair e converter clientes.</p>
               </div>
-              <div class="card">
+              <div class="container__card">
                 <h4>E-commerce</h4>
                 <p>lojas virtuais completas, seguras e prontas para vender.</p>
               </div>
@@ -72,7 +71,7 @@
               
         </section>
 
-        <section id="depoimentos">
+        <section class="section section--depoimentos">
             <h2>Depoimentos</h2>
             <blockquote>
                 <p>"A Agência Criativa Web entendeu exatamente o que a nossa marca precisava. O novo site aumentou nossas conversões em poucas semanas."</p>
@@ -96,36 +95,36 @@
             </blockquote>
         </section>
 
-        <section id="contato">
+        <section class="section section--contato">
             <h2>Fale conosco</h2>
             <p>Estamos prontos para transformar sua ideia em realidade digital.</p>
-            <ul>
-                <li><strong>Endereço:</strong> Av. Criativa, 123 — Sala 45, Campinas, SP</li>
-                <li><strong>Telefone:</strong> (19) 99999-0000</li>
-                <li><strong>E-mail:</strong> contato@agenciacriativaweb.com.br</li>
+            <ul class="contato__list">
+                <li class="item--contato"><strong>Endereço:</strong> Av. Criativa, 123 — Sala 45, Campinas, SP</li>
+                <li class="item--contato"><strong>Telefone:</strong> (19) 99999-0000</li>
+                <li class="item--contato"><strong>E-mail:</strong> contato@agenciacriativaweb.com.br</li>
             </ul>
 
-            <form action="">
+            <form action="" class="contato__form">
                 <h2>Formulário de contato:</h2>
 
                 <label for="">Nome:</label>
-                <input type="text" name="" id="" required placeholder="Digite seu nome">
+                <input type="text" name="" class="form__input" required placeholder="Digite seu nome">
 
                 <label for="">E-mail:</label>
-                <input type="email" name="" id="" required placeholder="Digite seu email">
+                <input type="email" name="" class="form__input" required placeholder="Digite seu email">
 
                 <label for="">Telefone:</label>
-                <input type="text" name="" id="" maxlength="11" placeholder="Digite seu Telefone">
+                <input type="text" name="" class="form__input" maxlength="11" placeholder="Digite seu Telefone">
 
                 <label for="">Mensagem:</label>
-                <input type="text" name="" id="" required placeholder="Digite sua Mensagem">
+                <input type="text" name="" class="form__input" required placeholder="Digite sua Mensagem">
 
                 <button>Enviar Mensagem</button>
             </form>
         </section>
     </main>
 
-    <footer id="footer">
+    <footer class="footer">
         &copy; Agência Criativa Web 2026
     </footer>
 </body>

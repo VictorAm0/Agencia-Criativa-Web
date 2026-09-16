@@ -21,7 +21,7 @@ main{
     flex: 1 1 0;   
 }
 
-header{
+.header{
     display: flex;
     width: 100%;
     min-height: 15%;
@@ -33,17 +33,17 @@ header{
 }
 
 
-header img{
+.header__logo{
   max-width: 45%;
 }
 
-header nav a{
+.nav__item{
     margin: 0.5em;
     text-decoration: none;
     color: oklch(26.9% 0 none);
     font-size: 1.25em;
 }
-header nav a:hover{
+.nav__item:hover{
     color: oklch(55.6% 0 none);
 }
 
@@ -62,13 +62,13 @@ h3{
     font-size: 1.3em;
 }
 
-section{
+.section{
     display: flex;
     flex-flow: column;
     gap: 0.5em;
 }
 
-#home button{
+.home__button{
     width: 15%;
     padding: 0.7em;
     border: none;
@@ -80,37 +80,36 @@ section{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#home button:hover, #contato button:hover{
+.section--home button:hover, #contato button:hover{
     background-color: oklch(71.5% 0.143 215.221);
 }
 
 
-#sobre img{
+.section--sobre img{
     border-radius: 0.2em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-bottom: 0.5em;
 }
 
-#sobre ul li{
+.item--sobre{
     margin-bottom: 0.7em;
     align-content: center;
 }
 
-#sobre ul{
+.sobre__list{
     margin: 0 1em;
     margin-bottom: 0.7em;
     display: flex;
-    flex-flow: column;
-    
+    flex-flow: column; 
 }
 
-#container{
+.container{
     display: grid;
     gap: 2.2em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.card{
+.container__card{
     display: flex;
     flex-flow: column;
     gap: 0.3em;
@@ -121,7 +120,7 @@ section{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#depoimentos{
+.section--depoimentos{
     display: flex;
     flex-flow: column;
     gap: 1.1em;
@@ -131,24 +130,25 @@ section{
     background-color: oklch(97% 0 none);
 }
 
-#contato ul{
+.contato__list{
     margin: 0.5em;
     display: flex;
     flex-direction: column;
     gap: 1.1em;
 }
 
-#contato ul li{
+.item--contato{
     list-style: none;
 }
 
-#contato form{
+
+.contato__form{
     display: flex;
     flex-flow: column;
     gap: 0.4em;
 }
 
-#contato form input{
+.form__input{
    width: 85%;
    height: 2.2em;
    padding: 1em;
@@ -157,11 +157,11 @@ section{
    border: none;
 }
 
-#contato form input:focus{
+.form__input:focus{
    outline: none;
 }
 
-#contato form button{
+.contato__form button{
     width: 20%;
     padding: 0.8em;
     border: none;
@@ -173,7 +173,7 @@ section{
     font-size: 1em;
 }
 
-#footer{
+.footer{
     background-color: oklch(20.5% 0 none);
     color: oklch(37.1% 0 none);
     padding: 1.5em;
@@ -201,7 +201,12 @@ section{
     flex-flow: column;
   }
 
-  #container{
+    header img{
+     transform: scale(2.2);
+     margin-left: 50px;
+  }
+
+  .container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6,1fr);
@@ -209,7 +214,7 @@ section{
     width: 100%;
     overflow: hidden;
   }
-  #servicos .card{
+  .container__card{
     width: 100%;
   }
 }
